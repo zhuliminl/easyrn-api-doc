@@ -1,7 +1,7 @@
 {
     "item": [
         {
-            "id": "8e7fc732-c320-41f4-8c67-f0574945d77e",
+            "id": "a42c39c5-c21d-4a37-85eb-95213ad442f5",
             "name": "auth",
             "description": {
                 "content": "",
@@ -9,7 +9,7 @@
             },
             "item": [
                 {
-                    "id": "d81aacc9-eab2-4ce5-a2fe-6e86aa08e914",
+                    "id": "6780582e-c360-496a-b694-3afdd94eb24b",
                     "name": "通过邮箱登录",
                     "request": {
                         "name": "通过邮箱登录",
@@ -49,7 +49,7 @@
                     },
                     "response": [
                         {
-                            "id": "43f6e4c6-cfa4-4e2f-9aae-729b5fb36f34",
+                            "id": "b33022e7-0348-4a84-acff-f5f40c51ea88",
                             "name": "用户信息和 token",
                             "originalRequest": {
                                 "url": {
@@ -82,7 +82,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": -55771432,\n  \"data\": {\n    \"token\": \"deserunt eiusmod amet\"\n  },\n  \"errors\": {},\n  \"message\": \"amet ipsum\",\n  \"status\": false\n}",
+                            "body": "{\n  \"code\": 32295234,\n  \"data\": {\n    \"token\": \"nisi\"\n  },\n  \"errors\": {},\n  \"message\": \"minim ipsum irure esse\",\n  \"status\": true\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -93,10 +93,10 @@
                     }
                 },
                 {
-                    "id": "51f0ebd9-5bab-4679-9537-75545f443739",
-                    "name": "通过手机号登录",
+                    "id": "c74de238-cb5c-4248-9a8a-9820757083a9",
+                    "name": "通过手机登录",
                     "request": {
-                        "name": "通过手机号登录",
+                        "name": "通过手机登录",
                         "description": {},
                         "url": {
                             "path": [
@@ -133,7 +133,7 @@
                     },
                     "response": [
                         {
-                            "id": "909fd31b-0dc1-42a9-8ad4-40ee075e5e54",
+                            "id": "c81068a9-622a-4e48-a11a-b76da0f62a7a",
                             "name": "用户信息和 token",
                             "originalRequest": {
                                 "url": {
@@ -166,7 +166,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": 76682488,\n  \"data\": {\n    \"token\": \"laborum ex in labore\",\n    \"user\": {\n      \"email\": \"consequat Lorem fugiat mollit eu\",\n      \"openId\": \"dolore sunt\",\n      \"phone\": \"enim nostrud in ut\",\n      \"user_id\": \"officia tempor dolore ullamco\",\n      \"username\": \"dolore dolor\",\n      \"wechat_nickname\": \"ipsum ex anim\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"commodo ea\",\n  \"status\": true\n}",
+                            "body": "{\n  \"code\": -62579507,\n  \"data\": {\n    \"token\": \"cupidatat culpa in incididunt commodo\",\n    \"user\": {\n      \"email\": \"nisi\",\n      \"openId\": \"ex dolore nostrud\",\n      \"phone\": \"laboris Lorem\",\n      \"user_id\": \"Ut nisi\",\n      \"username\": \"v\",\n      \"wechat_nickname\": \"mollit\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"eu deserun\",\n  \"status\": true\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -177,10 +177,10 @@
                     }
                 },
                 {
-                    "id": "d10d6b07-a92d-44e8-bec9-91a735dd914b",
-                    "name": "通过邮箱注册",
+                    "id": "d239e4e2-a8c2-42bf-9891-9e3bfe06c74a",
+                    "name": "通过邮箱账号注册",
                     "request": {
-                        "name": "通过邮箱注册",
+                        "name": "通过邮箱账号注册",
                         "description": {},
                         "url": {
                             "path": [
@@ -217,7 +217,7 @@
                     },
                     "response": [
                         {
-                            "id": "4aea3330-daa2-48de-a0b1-4b3e1ada21d3",
+                            "id": "1425b95e-c9e4-418f-9ff6-64496da2e81f",
                             "name": "用户信息和 token",
                             "originalRequest": {
                                 "url": {
@@ -250,7 +250,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": 76682488,\n  \"data\": {\n    \"token\": \"laborum ex in labore\",\n    \"user\": {\n      \"email\": \"consequat Lorem fugiat mollit eu\",\n      \"openId\": \"dolore sunt\",\n      \"phone\": \"enim nostrud in ut\",\n      \"user_id\": \"officia tempor dolore ullamco\",\n      \"username\": \"dolore dolor\",\n      \"wechat_nickname\": \"ipsum ex anim\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"commodo ea\",\n  \"status\": true\n}",
+                            "body": "{\n  \"code\": -62579507,\n  \"data\": {\n    \"token\": \"cupidatat culpa in incididunt commodo\",\n    \"user\": {\n      \"email\": \"nisi\",\n      \"openId\": \"ex dolore nostrud\",\n      \"phone\": \"laboris Lorem\",\n      \"user_id\": \"Ut nisi\",\n      \"username\": \"v\",\n      \"wechat_nickname\": \"mollit\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"eu deserun\",\n  \"status\": true\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -261,7 +261,7 @@
                     }
                 },
                 {
-                    "id": "e9ebced3-ebbd-44b5-9168-410fff41a8f7",
+                    "id": "7426f256-08a2-41be-9b56-82ee86607943",
                     "name": "通过手机注册",
                     "request": {
                         "name": "通过手机注册",
@@ -301,7 +301,7 @@
                     },
                     "response": [
                         {
-                            "id": "37627f9f-704d-4bb9-99da-fafeca894456",
+                            "id": "5f9abb6f-5588-4361-8ff4-0c5ad178ea13",
                             "name": "用户信息和 token",
                             "originalRequest": {
                                 "url": {
@@ -334,7 +334,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": 76682488,\n  \"data\": {\n    \"token\": \"laborum ex in labore\",\n    \"user\": {\n      \"email\": \"consequat Lorem fugiat mollit eu\",\n      \"openId\": \"dolore sunt\",\n      \"phone\": \"enim nostrud in ut\",\n      \"user_id\": \"officia tempor dolore ullamco\",\n      \"username\": \"dolore dolor\",\n      \"wechat_nickname\": \"ipsum ex anim\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"commodo ea\",\n  \"status\": true\n}",
+                            "body": "{\n  \"code\": -62579507,\n  \"data\": {\n    \"token\": \"cupidatat culpa in incididunt commodo\",\n    \"user\": {\n      \"email\": \"nisi\",\n      \"openId\": \"ex dolore nostrud\",\n      \"phone\": \"laboris Lorem\",\n      \"user_id\": \"Ut nisi\",\n      \"username\": \"v\",\n      \"wechat_nickname\": \"mollit\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"eu deserun\",\n  \"status\": true\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -345,7 +345,7 @@
                     }
                 },
                 {
-                    "id": "1057ff80-2564-481a-8a8c-9d4bb8178591",
+                    "id": "34c3a5e3-11bd-4dda-b5d0-c24f55d13854",
                     "name": "web 端轮询当前登录链接状态",
                     "request": {
                         "name": "web 端轮询当前登录链接状态",
@@ -373,7 +373,7 @@
                     },
                     "response": [
                         {
-                            "id": "cb06724b-b1ba-42f9-adad-5c5aa1ca480e",
+                            "id": "698d733f-4e61-4e76-87ff-46e024b735e4",
                             "name": "小程序链接",
                             "originalRequest": {
                                 "url": {
@@ -399,7 +399,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": -13133316,\n  \"data\": {\n    \"status\": \"pariatur nulla\"\n  },\n  \"errors\": {},\n  \"message\": \"aliquip ut\",\n  \"status\": false\n}",
+                            "body": "{\n  \"code\": -94767436,\n  \"data\": {\n    \"status\": \"adipisicing deserunt reprehenderit ut in\"\n  },\n  \"errors\": {},\n  \"message\": \"commodo aliqua\",\n  \"status\": false\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -410,7 +410,7 @@
                     }
                 },
                 {
-                    "id": "e3c48367-5d49-4c2f-ba45-1a8c7f41cec9",
+                    "id": "efec2d75-199d-45f2-9b2b-412b656cf8c0",
                     "name": "获取 openId",
                     "request": {
                         "name": "获取 openId",
@@ -438,7 +438,7 @@
                     },
                     "response": [
                         {
-                            "id": "c9c31eae-04a7-4773-94f9-13c00e67de3a",
+                            "id": "f601e2ad-8f1a-40f7-a7ae-4053895e5d57",
                             "name": "用户信息",
                             "originalRequest": {
                                 "url": {
@@ -464,7 +464,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": 29121391,\n  \"data\": {\n    \"email\": \"ut irure laboris\",\n    \"openId\": \"dol\",\n    \"phone\": \"tempor dolore\",\n    \"user_id\": \"amet\",\n    \"username\": \"tempor ipsu\",\n    \"wechat_nickname\": \"sint ad eu qui\"\n  },\n  \"errors\": {},\n  \"message\": \"voluptate eiusmod\",\n  \"status\": true\n}",
+                            "body": "{\n  \"code\": -98177322,\n  \"data\": {\n    \"email\": \"anim e\",\n    \"openId\": \"Ut proident tempor\",\n    \"phone\": \"magna eu ad ex\",\n    \"user_id\": \"consectetur aliqua laboris\",\n    \"username\": \"labori\",\n    \"wechat_nickname\": \"eiusmod Ut magna\"\n  },\n  \"errors\": {},\n  \"message\": \"non nostrud nisi ad\",\n  \"status\": false\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -478,7 +478,7 @@
             "event": []
         },
         {
-            "id": "56513bcb-5e5f-4baf-afff-8567704ce47e",
+            "id": "c2bde1c1-279e-41d5-a80b-69c11718f602",
             "name": "user",
             "description": {
                 "content": "",
@@ -486,7 +486,7 @@
             },
             "item": [
                 {
-                    "id": "d6d51029-7711-44d2-9ce4-51a3b1dab4b0",
+                    "id": "bfccf024-f14b-4a58-a111-4031d7042d70",
                     "name": "获取自己的用户信息",
                     "request": {
                         "name": "获取自己的用户信息",
@@ -529,7 +529,7 @@
                     },
                     "response": [
                         {
-                            "id": "2bd05279-a00a-449b-bc67-c45203891b72",
+                            "id": "a3567def-9d92-4225-8447-e4bcb5a7776e",
                             "name": "用户信息",
                             "originalRequest": {
                                 "url": {
@@ -554,7 +554,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": 29121391,\n  \"data\": {\n    \"email\": \"ut irure laboris\",\n    \"openId\": \"dol\",\n    \"phone\": \"tempor dolore\",\n    \"user_id\": \"amet\",\n    \"username\": \"tempor ipsu\",\n    \"wechat_nickname\": \"sint ad eu qui\"\n  },\n  \"errors\": {},\n  \"message\": \"voluptate eiusmod\",\n  \"status\": true\n}",
+                            "body": "{\n  \"code\": -98177322,\n  \"data\": {\n    \"email\": \"anim e\",\n    \"openId\": \"Ut proident tempor\",\n    \"phone\": \"magna eu ad ex\",\n    \"user_id\": \"consectetur aliqua laboris\",\n    \"username\": \"labori\",\n    \"wechat_nickname\": \"eiusmod Ut magna\"\n  },\n  \"errors\": {},\n  \"message\": \"non nostrud nisi ad\",\n  \"status\": false\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -565,7 +565,7 @@
                     }
                 },
                 {
-                    "id": "a5c52aec-4ed9-43c0-a3ad-c076791914d0",
+                    "id": "28899131-9808-4a8b-9678-2b4581e888bd",
                     "name": "获取用户信息",
                     "request": {
                         "name": "获取用户信息",
@@ -615,7 +615,7 @@
                     },
                     "response": [
                         {
-                            "id": "aac737b9-5514-456e-b2a1-a43e622f7c5a",
+                            "id": "9ae9dec3-c004-4c2a-9f61-ed5dbea7fe78",
                             "name": "用户信息",
                             "originalRequest": {
                                 "url": {
@@ -645,7 +645,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": 29121391,\n  \"data\": {\n    \"email\": \"ut irure laboris\",\n    \"openId\": \"dol\",\n    \"phone\": \"tempor dolore\",\n    \"user_id\": \"amet\",\n    \"username\": \"tempor ipsu\",\n    \"wechat_nickname\": \"sint ad eu qui\"\n  },\n  \"errors\": {},\n  \"message\": \"voluptate eiusmod\",\n  \"status\": true\n}",
+                            "body": "{\n  \"code\": -98177322,\n  \"data\": {\n    \"email\": \"anim e\",\n    \"openId\": \"Ut proident tempor\",\n    \"phone\": \"magna eu ad ex\",\n    \"user_id\": \"consectetur aliqua laboris\",\n    \"username\": \"labori\",\n    \"wechat_nickname\": \"eiusmod Ut magna\"\n  },\n  \"errors\": {},\n  \"message\": \"non nostrud nisi ad\",\n  \"status\": false\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -668,7 +668,7 @@
         }
     ],
     "info": {
-        "_postman_id": "12ffb8eb-9c84-4779-8122-018b4d489231",
+        "_postman_id": "22aecf5a-6220-443e-bf1e-953f69bf9688",
         "name": "KubeOperator Restful API",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {
