@@ -147,7 +147,7 @@ paths:
                 data:
                   $ref: '#/definitions/dto.ResRegister'
               type: object
-      summary: 通过手机号登录
+      summary: 通过手机登录
       tags:
       - auth
   /auth/registerByEmail:
@@ -173,7 +173,7 @@ paths:
                 data:
                   $ref: '#/definitions/dto.ResRegister'
               type: object
-      summary: 通过邮箱注册
+      summary: 通过邮箱账号注册
       tags:
       - auth
   /auth/registerByPhone:

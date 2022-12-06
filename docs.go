@@ -81,7 +81,7 @@ const docTemplate = `{
                 "tags": [
                     "auth"
                 ],
-                "summary": "通过手机号登录",
+                "summary": "通过手机登录",
                 "parameters": [
                     {
                         "description": "登录",
@@ -126,7 +126,7 @@ const docTemplate = `{
                 "tags": [
                     "auth"
                 ],
-                "summary": "通过邮箱注册",
+                "summary": "通过邮箱账号注册",
                 "parameters": [
                     {
                         "description": "注册",
