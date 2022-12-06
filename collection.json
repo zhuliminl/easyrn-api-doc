@@ -1,0 +1,679 @@
+{
+    "item": [
+        {
+            "id": "8e7fc732-c320-41f4-8c67-f0574945d77e",
+            "name": "auth",
+            "description": {
+                "content": "",
+                "type": "text/plain"
+            },
+            "item": [
+                {
+                    "id": "d81aacc9-eab2-4ce5-a2fe-6e86aa08e914",
+                    "name": "通过邮箱登录",
+                    "request": {
+                        "name": "通过邮箱登录",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "auth",
+                                "loginByEmail"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "43f6e4c6-cfa4-4e2f-9aae-729b5fb36f34",
+                            "name": "用户信息和 token",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "auth",
+                                        "loginByEmail"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": -55771432,\n  \"data\": {\n    \"token\": \"deserunt eiusmod amet\"\n  },\n  \"errors\": {},\n  \"message\": \"amet ipsum\",\n  \"status\": false\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "51f0ebd9-5bab-4679-9537-75545f443739",
+                    "name": "通过手机号登录",
+                    "request": {
+                        "name": "通过手机号登录",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "auth",
+                                "loginByPhone"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "909fd31b-0dc1-42a9-8ad4-40ee075e5e54",
+                            "name": "用户信息和 token",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "auth",
+                                        "loginByPhone"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": 76682488,\n  \"data\": {\n    \"token\": \"laborum ex in labore\",\n    \"user\": {\n      \"email\": \"consequat Lorem fugiat mollit eu\",\n      \"openId\": \"dolore sunt\",\n      \"phone\": \"enim nostrud in ut\",\n      \"user_id\": \"officia tempor dolore ullamco\",\n      \"username\": \"dolore dolor\",\n      \"wechat_nickname\": \"ipsum ex anim\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"commodo ea\",\n  \"status\": true\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "d10d6b07-a92d-44e8-bec9-91a735dd914b",
+                    "name": "通过邮箱注册",
+                    "request": {
+                        "name": "通过邮箱注册",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "auth",
+                                "registerByEmail"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "4aea3330-daa2-48de-a0b1-4b3e1ada21d3",
+                            "name": "用户信息和 token",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "auth",
+                                        "registerByEmail"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": 76682488,\n  \"data\": {\n    \"token\": \"laborum ex in labore\",\n    \"user\": {\n      \"email\": \"consequat Lorem fugiat mollit eu\",\n      \"openId\": \"dolore sunt\",\n      \"phone\": \"enim nostrud in ut\",\n      \"user_id\": \"officia tempor dolore ullamco\",\n      \"username\": \"dolore dolor\",\n      \"wechat_nickname\": \"ipsum ex anim\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"commodo ea\",\n  \"status\": true\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "e9ebced3-ebbd-44b5-9168-410fff41a8f7",
+                    "name": "通过手机注册",
+                    "request": {
+                        "name": "通过手机注册",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "auth",
+                                "registerByPhone"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "37627f9f-704d-4bb9-99da-fafeca894456",
+                            "name": "用户信息和 token",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "auth",
+                                        "registerByPhone"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": 76682488,\n  \"data\": {\n    \"token\": \"laborum ex in labore\",\n    \"user\": {\n      \"email\": \"consequat Lorem fugiat mollit eu\",\n      \"openId\": \"dolore sunt\",\n      \"phone\": \"enim nostrud in ut\",\n      \"user_id\": \"officia tempor dolore ullamco\",\n      \"username\": \"dolore dolor\",\n      \"wechat_nickname\": \"ipsum ex anim\"\n    }\n  },\n  \"errors\": {},\n  \"message\": \"commodo ea\",\n  \"status\": true\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "1057ff80-2564-481a-8a8c-9d4bb8178591",
+                    "name": "web 端轮询当前登录链接状态",
+                    "request": {
+                        "name": "web 端轮询当前登录链接状态",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "auth",
+                                "wx",
+                                "getMiniLinkStatus"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "cb06724b-b1ba-42f9-adad-5c5aa1ca480e",
+                            "name": "小程序链接",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "auth",
+                                        "wx",
+                                        "getMiniLinkStatus"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": -13133316,\n  \"data\": {\n    \"status\": \"pariatur nulla\"\n  },\n  \"errors\": {},\n  \"message\": \"aliquip ut\",\n  \"status\": false\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "e3c48367-5d49-4c2f-ba45-1a8c7f41cec9",
+                    "name": "获取 openId",
+                    "request": {
+                        "name": "获取 openId",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "auth",
+                                "wx",
+                                "getOpenId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "c9c31eae-04a7-4773-94f9-13c00e67de3a",
+                            "name": "用户信息",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "auth",
+                                        "wx",
+                                        "getOpenId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": 29121391,\n  \"data\": {\n    \"email\": \"ut irure laboris\",\n    \"openId\": \"dol\",\n    \"phone\": \"tempor dolore\",\n    \"user_id\": \"amet\",\n    \"username\": \"tempor ipsu\",\n    \"wechat_nickname\": \"sint ad eu qui\"\n  },\n  \"errors\": {},\n  \"message\": \"voluptate eiusmod\",\n  \"status\": true\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "56513bcb-5e5f-4baf-afff-8567704ce47e",
+            "name": "user",
+            "description": {
+                "content": "",
+                "type": "text/plain"
+            },
+            "item": [
+                {
+                    "id": "d6d51029-7711-44d2-9ce4-51a3b1dab4b0",
+                    "name": "获取自己的用户信息",
+                    "request": {
+                        "name": "获取自己的用户信息",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "user",
+                                "getMyInfo"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": {
+                            "type": "apikey",
+                            "apikey": [
+                                {
+                                    "key": "key",
+                                    "value": "token"
+                                },
+                                {
+                                    "key": "value",
+                                    "value": "<API Key>"
+                                },
+                                {
+                                    "key": "in",
+                                    "value": "header"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "2bd05279-a00a-449b-bc67-c45203891b72",
+                            "name": "用户信息",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "user",
+                                        "getMyInfo"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": 29121391,\n  \"data\": {\n    \"email\": \"ut irure laboris\",\n    \"openId\": \"dol\",\n    \"phone\": \"tempor dolore\",\n    \"user_id\": \"amet\",\n    \"username\": \"tempor ipsu\",\n    \"wechat_nickname\": \"sint ad eu qui\"\n  },\n  \"errors\": {},\n  \"message\": \"voluptate eiusmod\",\n  \"status\": true\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "a5c52aec-4ed9-43c0-a3ad-c076791914d0",
+                    "name": "获取用户信息",
+                    "request": {
+                        "name": "获取用户信息",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "user",
+                                "getUserByUserId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": false,
+                                    "key": "userId",
+                                    "value": "<string>",
+                                    "description": "(Required) 用户 userId"
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": {
+                            "type": "apikey",
+                            "apikey": [
+                                {
+                                    "key": "key",
+                                    "value": "token"
+                                },
+                                {
+                                    "key": "value",
+                                    "value": "<API Key>"
+                                },
+                                {
+                                    "key": "in",
+                                    "value": "header"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "aac737b9-5514-456e-b2a1-a43e622f7c5a",
+                            "name": "用户信息",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "user",
+                                        "getUserByUserId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "userId",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": 29121391,\n  \"data\": {\n    \"email\": \"ut irure laboris\",\n    \"openId\": \"dol\",\n    \"phone\": \"tempor dolore\",\n    \"user_id\": \"amet\",\n    \"username\": \"tempor ipsu\",\n    \"wechat_nickname\": \"sint ad eu qui\"\n  },\n  \"errors\": {},\n  \"message\": \"voluptate eiusmod\",\n  \"status\": true\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "type": "string",
+            "value": "/",
+            "key": "baseUrl"
+        }
+    ],
+    "info": {
+        "_postman_id": "12ffb8eb-9c84-4779-8122-018b4d489231",
+        "name": "KubeOperator Restful API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "Contact Support:\n Name: Fit2cloud Support\n Email: support@fit2cloud.com",
+            "type": "text/plain"
+        }
+    }
+}
